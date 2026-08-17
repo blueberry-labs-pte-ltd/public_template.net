@@ -1,0 +1,48 @@
+{
+  "id": "bfl",
+  "label": "Black Forest Labs (FLUX.2)",
+  "apiKeyEnv": "BFL_API_KEY",
+  "endpoint": "https://api.bfl.ai/v1/{{model}}",
+  "endpointEnv": "BFL_IMAGE_ENDPOINT",
+  "headers": {
+    "x-key": "{{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "prompt": "{{prompt}}",
+    "aspect_ratio": "{{aspect}}",
+    "output_format": "png"
+  },
+  "poll": {
+    "urlPaths": [
+      "polling_url"
+    ],
+    "endpoint": "https://api.bfl.ai/v1/get_result?id={{taskId}}",
+    "taskIdPaths": [
+      "id"
+    ],
+    "statusPaths": [
+      "status"
+    ],
+    "successValues": [
+      "Ready"
+    ],
+    "failureValues": [
+      "Error",
+      "Failed",
+      "Content Moderated",
+      "Request Moderated"
+    ],
+    "imagePaths": [
+      "result.sample"
+    ],
+    "intervalMs": 2000
+  },
+  "errorPaths": [
+    "detail",
+    "error"
+  ],
+  "verified": false,
+  "docs": "https://docs.bfl.ai",
+  "note": "Submit-then-poll flow; the model id is the URL path segment (flux-2-pro)."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "zhipu",
+  "label": "Zhipu BigModel (GLM-Image)",
+  "apiKeyEnv": "ZHIPU_API_KEY",
+  "endpoint": "https://open.bigmodel.cn/api/paas/v4/images/generations",
+  "endpointEnv": "ZHIPU_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "size": "{{size}}"
+  },
+  "imagePaths": [
+    "data[].url",
+    "data[].b64_json"
+  ],
+  "errorPaths": [
+    "error.message",
+    "msg"
+  ],
+  "verified": false,
+  "docs": "https://docs.bigmodel.cn",
+  "note": "Use the api.z.ai host via ZHIPU_IMAGE_ENDPOINT for international accounts."
+}

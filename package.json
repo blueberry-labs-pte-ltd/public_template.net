@@ -1,0 +1,16 @@
+{
+  "name": "runware-image-bench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Run 5 fixed prompts across every Runware image model and compare the output side by side.",
+  "scripts": {
+    "resolve": "node src/resolve.mjs",
+    "test": "node src/run.mjs",
+    "gallery": "node src/gallery.mjs",
+    "dry": "node src/run.mjs --dry-run"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

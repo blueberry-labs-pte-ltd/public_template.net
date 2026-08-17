@@ -1,0 +1,28 @@
+{
+  "id": "baidu",
+  "label": "Baidu Qianfan (ERNIE iRAG Image)",
+  "apiKeyEnv": "QIANFAN_API_KEY",
+  "endpoint": "https://qianfan.baidubce.com/v2/images/generations",
+  "endpointEnv": "QIANFAN_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "size": "{{size}}",
+    "n": 1
+  },
+  "imagePaths": [
+    "data[].url",
+    "data[].b64_json"
+  ],
+  "errorPaths": [
+    "error.message",
+    "error_msg"
+  ],
+  "verified": false,
+  "docs": "https://cloud.baidu.com/doc/qianfan-api",
+  "note": "Qianfan v2 accepts a bearer API key. The turbo variant is a separate model id (e.g. irag-1.0 vs ernie-irag-image-turbo) — check your console."
+}

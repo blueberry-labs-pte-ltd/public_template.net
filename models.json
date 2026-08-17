@@ -1,0 +1,346 @@
+[
+  {
+    "id": "step-image-edit-2",
+    "name": "Step Image Edit 2",
+    "kind": "edit",
+    "runwareSearch": "step image",
+    "runwareAir": null,
+    "native": {
+      "provider": "stepfun",
+      "model": "step-image-edit-2"
+    }
+  },
+  {
+    "id": "hidream-o1-image-dev",
+    "name": "HiDream-O1-Image-Dev",
+    "kind": "t2i",
+    "runwareSearch": "hidream",
+    "runwareAir": null,
+    "native": {
+      "provider": "hidream",
+      "model": "hidream-o1-image-dev"
+    }
+  },
+  {
+    "id": "z-image-turbo",
+    "name": "Z-Image Turbo",
+    "kind": "t2i",
+    "runwareSearch": "z-image",
+    "runwareAir": null,
+    "native": {
+      "provider": "dashscope",
+      "model": "z-image-turbo"
+    }
+  },
+  {
+    "id": "hidream-o1-image",
+    "name": "HiDream-O1-Image",
+    "kind": "t2i",
+    "runwareSearch": "hidream",
+    "runwareAir": null,
+    "native": {
+      "provider": "hidream",
+      "model": "hidream-o1-image"
+    }
+  },
+  {
+    "id": "kolors-2-1",
+    "name": "Kolors 2.1",
+    "kind": "t2i",
+    "runwareSearch": "kolors",
+    "runwareAir": null,
+    "native": {
+      "provider": "kling",
+      "model": "kolors-2.1"
+    }
+  },
+  {
+    "id": "glm-image",
+    "name": "GLM-Image",
+    "kind": "t2i",
+    "runwareSearch": "glm-image",
+    "runwareAir": null,
+    "native": {
+      "provider": "zhipu",
+      "model": "glm-image"
+    }
+  },
+  {
+    "id": "ernie-image-turbo",
+    "name": "ERNIE Image / Turbo",
+    "kind": "t2i",
+    "runwareSearch": "ernie",
+    "runwareAir": null,
+    "native": {
+      "provider": "baidu",
+      "model": "ernie-irag-image-turbo"
+    }
+  },
+  {
+    "id": "nano-banana-2-lite",
+    "name": "Nano Banana 2 Lite",
+    "kind": "t2i",
+    "runwareSearch": "nano banana",
+    "runwareAir": null,
+    "native": {
+      "provider": "google",
+      "model": "gemini-3.1-flash-lite-image"
+    }
+  },
+  {
+    "id": "seedream-4-0",
+    "name": "Seedream 4.0",
+    "kind": "t2i",
+    "runwareSearch": "seedream",
+    "runwareAir": null,
+    "native": {
+      "provider": "volcengine",
+      "model": "doubao-seedream-4-0"
+    }
+  },
+  {
+    "id": "mai-image-2-5-flash",
+    "name": "MAI-Image-2.5-Flash",
+    "kind": "t2i",
+    "runwareSearch": "mai image",
+    "runwareAir": null,
+    "native": {
+      "provider": "azure",
+      "model": "MAI-Image-2.5-Flash"
+    }
+  },
+  {
+    "id": "qwen-image-edit-plus-2511",
+    "name": "Qwen-Image-Edit-Plus (2511)",
+    "kind": "edit",
+    "runwareSearch": "qwen-image",
+    "runwareAir": null,
+    "native": {
+      "provider": "dashscope",
+      "model": "qwen-image-edit-plus-2511"
+    }
+  },
+  {
+    "id": "wan-2-7-image",
+    "name": "Wan 2.7 Image",
+    "kind": "t2i",
+    "runwareSearch": "wan",
+    "runwareAir": null,
+    "native": {
+      "provider": "dashscope",
+      "model": "wan2.7-t2i"
+    }
+  },
+  {
+    "id": "kling-image-3-0-omni",
+    "name": "Kling Image 3.0 Omni",
+    "kind": "t2i",
+    "runwareSearch": "kling",
+    "runwareAir": null,
+    "native": {
+      "provider": "kling",
+      "model": "kling-image-3.0-omni"
+    },
+    "runwareAlias": "Kling Image 3.0"
+  },
+  {
+    "id": "seedream-4-5",
+    "name": "Seedream 4.5",
+    "kind": "t2i",
+    "runwareSearch": "seedream",
+    "runwareAir": null,
+    "native": {
+      "provider": "volcengine",
+      "model": "doubao-seedream-4-5"
+    }
+  },
+  {
+    "id": "qwen-image-3-0-standard",
+    "name": "Qwen-Image 3.0 (Standard)",
+    "kind": "t2i",
+    "runwareSearch": "qwen-image",
+    "runwareAir": null,
+    "native": {
+      "provider": "dashscope",
+      "model": "qwen-image3.0"
+    }
+  },
+  {
+    "id": "minimax-image-01",
+    "name": "MiniMax Image-01",
+    "kind": "t2i",
+    "runwareSearch": "minimax",
+    "runwareAir": null,
+    "native": {
+      "provider": "minimax",
+      "model": "image-01"
+    }
+  },
+  {
+    "id": "flux-2-pro",
+    "name": "FLUX.2 [pro]",
+    "kind": "t2i",
+    "runwareSearch": "flux.2",
+    "runwareAir": null,
+    "native": {
+      "provider": "bfl",
+      "model": "flux-2-pro"
+    }
+  },
+  {
+    "id": "flux-2-klein-9b",
+    "name": "FLUX.2 [klein] 9B",
+    "kind": "t2i",
+    "runwareSearch": "flux.2",
+    "runwareAir": null,
+    "native": {
+      "provider": "bfl",
+      "model": "flux-2-klein-9b"
+    }
+  },
+  {
+    "id": "flux-2-klein-4b",
+    "name": "FLUX.2 [klein] 4B",
+    "kind": "t2i",
+    "runwareSearch": "flux.2",
+    "runwareAir": null,
+    "native": {
+      "provider": "bfl",
+      "model": "flux-2-klein-4b"
+    }
+  },
+  {
+    "id": "flux-2-klein-9b-base",
+    "name": "FLUX.2 [klein] 9B Base",
+    "kind": "t2i",
+    "runwareSearch": "flux.2",
+    "runwareAir": null,
+    "native": {
+      "provider": "bfl",
+      "model": "flux-2-klein-9b-base"
+    }
+  },
+  {
+    "id": "flux-2-klein-9b-kv",
+    "name": "FLUX.2 [klein] 9B KV",
+    "kind": "t2i",
+    "runwareSearch": "flux.2",
+    "runwareAir": null,
+    "native": {
+      "provider": "bfl",
+      "model": "flux-2-klein-9b-kv"
+    }
+  },
+  {
+    "id": "flux-2-klein-4b-base",
+    "name": "FLUX.2 [klein] 4B Base",
+    "kind": "t2i",
+    "runwareSearch": "flux.2",
+    "runwareAir": null,
+    "native": {
+      "provider": "bfl",
+      "model": "flux-2-klein-4b-base"
+    }
+  },
+  {
+    "id": "nano-banana-2",
+    "name": "Nano Banana 2 (Gemini 3.1 Flash)",
+    "kind": "t2i",
+    "runwareSearch": "nano banana",
+    "runwareAir": null,
+    "native": {
+      "provider": "google",
+      "model": "gemini-3.1-flash-image"
+    }
+  },
+  {
+    "id": "seedream-5-0-lite",
+    "name": "Seedream 5.0 Lite",
+    "kind": "t2i",
+    "runwareSearch": "seedream",
+    "runwareAir": null,
+    "native": {
+      "provider": "volcengine",
+      "model": "doubao-seedream-5-0-lite"
+    }
+  },
+  {
+    "id": "qwen-image-3-0-pro",
+    "name": "Qwen-Image 3.0 Pro",
+    "kind": "t2i",
+    "runwareSearch": "qwen-image",
+    "runwareAir": null,
+    "native": {
+      "provider": "dashscope",
+      "model": "qwen-image3.0-pro"
+    }
+  },
+  {
+    "id": "seedream-5-0-pro",
+    "name": "Seedream 5.0 Pro",
+    "kind": "t2i",
+    "runwareSearch": "seedream",
+    "runwareAir": null,
+    "native": {
+      "provider": "volcengine",
+      "model": "doubao-seedream-5-0-pro"
+    }
+  },
+  {
+    "id": "ideogram-4-0",
+    "name": "Ideogram 4.0",
+    "kind": "t2i",
+    "runwareSearch": "ideogram",
+    "runwareAir": null,
+    "native": {
+      "provider": "ideogram",
+      "model": "V_4"
+    }
+  },
+  {
+    "id": "wan-2-7-image-pro",
+    "name": "Wan 2.7 Image Pro",
+    "kind": "t2i",
+    "runwareSearch": "wan",
+    "runwareAir": null,
+    "native": {
+      "provider": "dashscope",
+      "model": "wan2.7-t2i-pro"
+    }
+  },
+  {
+    "id": "qwen-image-2-0-pro",
+    "name": "Qwen-Image 2.0 Pro",
+    "kind": "t2i",
+    "runwareSearch": "qwen-image",
+    "runwareAir": null,
+    "native": {
+      "provider": "dashscope",
+      "model": "qwen-image2.0-pro"
+    }
+  },
+  {
+    "id": "hunyuanimage-3-0-instruct",
+    "name": "HunyuanImage 3.0 Instruct",
+    "kind": "t2i",
+    "runwareSearch": "hunyuan",
+    "runwareAir": null,
+    "native": {
+      "provider": "tencent",
+      "model": "hunyuanimage-3.0-instruct"
+    },
+    "runwareAlias": "HunyuanImage 3.0"
+  },
+  {
+    "id": "gpt-image-2-high",
+    "name": "GPT Image 2 (high)",
+    "kind": "t2i",
+    "runwareSearch": "gpt",
+    "runwareAir": null,
+    "native": {
+      "provider": "openai",
+      "model": "gpt-image-2",
+      "quality": "high"
+    }
+  }
+]

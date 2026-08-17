@@ -1,0 +1,27 @@
+{
+  "id": "tencent",
+  "label": "Tencent Hunyuan",
+  "apiKeyEnv": "HUNYUAN_API_KEY",
+  "endpoint": null,
+  "endpointEnv": "HUNYUAN_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "size": "{{size}}"
+  },
+  "imagePaths": [
+    "data[].url",
+    "data[].b64_json"
+  ],
+  "errorPaths": [
+    "error.message",
+    "Response.Error.Message"
+  ],
+  "verified": false,
+  "docs": "https://cloud.tencent.com/document/product/1729",
+  "note": "The native Tencent Cloud hunyuan API uses TC3-HMAC-SHA256 request signing, which a static bearer key cannot satisfy. Set HUNYUAN_IMAGE_ENDPOINT to an OpenAI-compatible host (LKEAP gateway or your own proxy) to run HunyuanImage 3.0 Instruct."
+}

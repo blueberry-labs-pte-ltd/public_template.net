@@ -1,0 +1,45 @@
+{
+  "id": "kling",
+  "label": "Kling AI (Kolors / Kling Image)",
+  "apiKeyEnv": "KLING_ACCESS_KEY",
+  "secretKeyEnv": "KLING_SECRET_KEY",
+  "authMode": "kling-jwt",
+  "endpoint": "https://api-singapore.klingai.com/v1/images/generations",
+  "endpointEnv": "KLING_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model_name": "{{model}}",
+    "prompt": "{{prompt}}",
+    "negative_prompt": "{{negativePrompt}}",
+    "aspect_ratio": "{{aspect}}",
+    "n": 1
+  },
+  "poll": {
+    "endpoint": "https://api-singapore.klingai.com/v1/images/generations/{{taskId}}",
+    "taskIdPaths": [
+      "data.task_id"
+    ],
+    "statusPaths": [
+      "data.task_status"
+    ],
+    "successValues": [
+      "succeed"
+    ],
+    "failureValues": [
+      "failed"
+    ],
+    "imagePaths": [
+      "data.task_result.images[].url"
+    ],
+    "intervalMs": 4000
+  },
+  "errorPaths": [
+    "message"
+  ],
+  "verified": false,
+  "docs": "https://app.klingai.com/global/dev/document-api",
+  "note": "Kling signs requests with a short-lived HS256 JWT built from access key + secret — both KLING_ACCESS_KEY and KLING_SECRET_KEY are required, and the token is minted per request."
+}

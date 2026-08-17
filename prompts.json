@@ -1,0 +1,37 @@
+[
+  {
+    "id": "p1-magazine-cover",
+    "label": "Editorial startup-validation cover",
+    "aspect": "16:9",
+    "positivePrompt": "Create a premium editorial-style business magazine cover image, 1600 x 900 pixels, 16:9 landscape. Show a sophisticated startup validation workspace with carefully arranged physical materials: a rough unfinished prototype, customer feedback cards and handwritten research notes, testing samples and multiple prototype variations, user testing materials, a refined final prototype, and a notebook with organised findings. Arrange these naturally across one premium wooden worktable, with the rough prototype gradually becoming more refined toward the finished solution. Deep navy, charcoal, warm ivory, natural wood, brushed metal, subtle champagne-gold lighting. Premium commercial photography, cinematic directional lighting, realistic textures, shallow depth of field. Keep the composition visually complete across the entire frame.",
+    "negativePrompt": "text, letters, words, logos, watermark, arrows, charts, graphs, lightbulbs, rockets, puzzle pieces, generic office setup, futuristic technology"
+  },
+  {
+    "id": "p2-pencil-sketch-tech",
+    "label": "Pencil sketch: router, laptop, IT city",
+    "aspect": "4:3",
+    "positivePrompt": "Generate a simple pencil sketch and line drawing of a tech scene on a wooden table. On the left side of the table, draw a Wi-Fi router. Perched directly on top of the router, draw a small stylized internet symbol. To the right of the router, draw an open laptop. Out of the laptop screen, draw a miniature city of IT buildings and skyscrapers that seamlessly emerges and grows upward, filling the top half of the drawing. Draw an ethernet cable plugged into the port on the left side of the laptop, with the wire curling around to the back. Artistic loose hand-drawn sketch with visible pencil texture, minimal shading, clean lines. Black and white on white paper.",
+    "negativePrompt": "color, colour, photograph, 3d render, heavy shading, text, watermark"
+  },
+  {
+    "id": "p3-relaxus-logo",
+    "label": "Relaxus pilates logo (text rendering)",
+    "aspect": "1:1",
+    "positivePrompt": "Create a logo for a pilates studio named \"Relaxus\", with the name in black text and a light beige background.",
+    "negativePrompt": "misspelled text, gibberish letters, watermark, busy background"
+  },
+  {
+    "id": "p4-robot-dog-neon",
+    "label": "Futuristic robot dog, neon city",
+    "aspect": "16:9",
+    "positivePrompt": "Generate a picture of a futuristic robot dog in a neon city.",
+    "negativePrompt": "text, watermark, blurry, low quality"
+  },
+  {
+    "id": "p5-cat-windowsill",
+    "label": "Majestic cat on windowsill",
+    "aspect": "1:1",
+    "positivePrompt": "Create an image of a majestic cat sitting on a windowsill with sunlight streaming in.",
+    "negativePrompt": "text, watermark, deformed anatomy, extra limbs"
+  }
+]

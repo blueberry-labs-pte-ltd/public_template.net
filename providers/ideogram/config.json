@@ -1,0 +1,31 @@
+{
+  "id": "ideogram",
+  "label": "Ideogram",
+  "apiKeyEnv": "IDEOGRAM_API_KEY",
+  "endpoint": "https://api.ideogram.ai/v1/ideogram-v3/generate",
+  "endpointEnv": "IDEOGRAM_IMAGE_ENDPOINT",
+  "headers": {
+    "Api-Key": "{{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "prompt": "{{prompt}}",
+    "aspect_ratio": "{{aspect}}",
+    "rendering_speed": "DEFAULT"
+  },
+  "aspectAliases": {
+    "16:9": "16x9",
+    "4:3": "4x3",
+    "1:1": "1x1"
+  },
+  "imagePaths": [
+    "data[].url"
+  ],
+  "errorPaths": [
+    "detail",
+    "message"
+  ],
+  "verified": false,
+  "docs": "https://developer.ideogram.ai",
+  "note": "Ideogram v3 generate normally expects multipart/form-data. If this JSON call 400s, either point IDEOGRAM_IMAGE_ENDPOINT at a JSON-compatible gateway or switch the body to the v1 { image_request: {...} } shape."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "minimax",
+  "label": "MiniMax",
+  "apiKeyEnv": "MINIMAX_API_KEY",
+  "endpoint": "https://api.minimax.io/v1/image_generation",
+  "endpointEnv": "MINIMAX_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "aspect_ratio": "{{aspect}}",
+    "n": 1,
+    "response_format": "url"
+  },
+  "imagePaths": [
+    "data.image_urls[]",
+    "data.image_base64[]"
+  ],
+  "errorPaths": [
+    "base_resp.status_msg"
+  ],
+  "verified": false,
+  "docs": "https://www.minimax.io/platform/document",
+  "note": "Use api.minimaxi.com (via MINIMAX_IMAGE_ENDPOINT) if your account is on the mainland host."
+}

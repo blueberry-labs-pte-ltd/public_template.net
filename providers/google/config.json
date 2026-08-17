@@ -1,0 +1,40 @@
+{
+  "id": "google",
+  "label": "Google Gemini (Nano Banana)",
+  "apiKeyEnv": "GEMINI_API_KEY",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/{{model}}:generateContent",
+  "endpointEnv": "GEMINI_IMAGE_ENDPOINT",
+  "headers": {
+    "x-goog-api-key": "{{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "contents": [
+      {
+        "parts": [
+          {
+            "text": "{{prompt}}"
+          }
+        ]
+      }
+    ],
+    "generationConfig": {
+      "responseModalities": [
+        "IMAGE"
+      ],
+      "imageConfig": {
+        "aspectRatio": "{{aspect}}"
+      }
+    }
+  },
+  "imagePaths": [
+    "candidates[].content.parts[].inlineData.data",
+    "candidates[].content.parts[].inline_data.data"
+  ],
+  "errorPaths": [
+    "error.message"
+  ],
+  "verified": true,
+  "docs": "https://ai.google.dev/gemini-api/docs/image-generation",
+  "note": "Confirm the model ids for Nano Banana 2 / 2 Lite against your account’s model list; the request shape is the standard generateContent image call."
+}

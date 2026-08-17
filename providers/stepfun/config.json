@@ -1,0 +1,28 @@
+{
+  "id": "stepfun",
+  "label": "StepFun (Step Image Edit)",
+  "apiKeyEnv": "STEPFUN_API_KEY",
+  "endpoint": "https://api.stepfun.com/v1/images/generations",
+  "endpointEnv": "STEPFUN_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "size": "{{size}}",
+    "response_format": "b64_json",
+    "n": 1
+  },
+  "imagePaths": [
+    "data[].b64_json",
+    "data[].url"
+  ],
+  "errorPaths": [
+    "error.message"
+  ],
+  "verified": false,
+  "docs": "https://platform.stepfun.com/docs",
+  "note": "Step Image Edit 2 is an IMAGE-EDIT model: it expects a source image, so the five text-only prompts here will likely be rejected. Use --ref to supply a base image, or expect an explicit error row."
+}

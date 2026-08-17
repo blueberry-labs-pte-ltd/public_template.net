@@ -1,0 +1,33 @@
+{
+  "id": "openai",
+  "label": "OpenAI (GPT Image)",
+  "apiKeyEnv": "OPENAI_API_KEY",
+  "endpoint": "https://api.openai.com/v1/images/generations",
+  "endpointEnv": "OPENAI_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "size": "{{size}}",
+    "quality": "{{quality}}",
+    "n": 1
+  },
+  "sizeAliases": {
+    "16:9": "1536x1024",
+    "4:3": "1536x1024",
+    "1:1": "1024x1024"
+  },
+  "imagePaths": [
+    "data[].b64_json",
+    "data[].url"
+  ],
+  "errorPaths": [
+    "error.message"
+  ],
+  "verified": true,
+  "docs": "https://platform.openai.com/docs/api-reference/images",
+  "note": "gpt-image sizes are a fixed set, so 16:9 and 4:3 both map to the 1536x1024 landscape size. quality comes from models.json (native.quality = \"high\")."
+}

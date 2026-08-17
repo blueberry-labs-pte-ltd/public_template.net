@@ -1,0 +1,27 @@
+{
+  "id": "hidream",
+  "label": "HiDream",
+  "apiKeyEnv": "HIDREAM_API_KEY",
+  "endpoint": null,
+  "endpointEnv": "HIDREAM_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "size": "{{size}}",
+    "n": 1
+  },
+  "imagePaths": [
+    "data[].url",
+    "data[].b64_json"
+  ],
+  "errorPaths": [
+    "error.message"
+  ],
+  "verified": false,
+  "docs": "https://hidreamai.com",
+  "note": "No first-party public REST API confirmed for HiDream-O1 / O1-Dev. Point HIDREAM_IMAGE_ENDPOINT at whichever host serves it for you (vendor API or aggregator); the body above is OpenAI-images compatible."
+}

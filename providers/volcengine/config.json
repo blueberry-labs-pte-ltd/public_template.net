@@ -1,0 +1,29 @@
+{
+  "id": "volcengine",
+  "label": "Volcengine Ark (Seedream)",
+  "apiKeyEnv": "ARK_API_KEY",
+  "endpoint": "https://ark.cn-beijing.volces.com/api/v3/images/generations",
+  "endpointEnv": "ARK_IMAGE_ENDPOINT",
+  "headers": {
+    "Authorization": "Bearer {{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "size": "{{size}}",
+    "response_format": "url",
+    "watermark": false
+  },
+  "imagePaths": [
+    "data[].url",
+    "data[].b64_json"
+  ],
+  "errorPaths": [
+    "error.message",
+    "message"
+  ],
+  "verified": false,
+  "docs": "https://www.volcengine.com/docs/82379",
+  "note": "Ark model ids are account/region specific — the model field often needs the full Ark model id or your endpoint id (ep-...). Set ARK_IMAGE_ENDPOINT for a non-Beijing region."
+}

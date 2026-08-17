@@ -1,0 +1,32 @@
+{
+  "id": "azure",
+  "label": "Azure AI Foundry (MAI-Image)",
+  "apiKeyEnv": "AZURE_IMAGE_API_KEY",
+  "endpoint": null,
+  "endpointEnv": "AZURE_IMAGE_ENDPOINT",
+  "headers": {
+    "api-key": "{{apiKey}}",
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "model": "{{model}}",
+    "prompt": "{{prompt}}",
+    "size": "{{size}}",
+    "n": 1
+  },
+  "sizeAliases": {
+    "16:9": "1536x1024",
+    "4:3": "1536x1024",
+    "1:1": "1024x1024"
+  },
+  "imagePaths": [
+    "data[].b64_json",
+    "data[].url"
+  ],
+  "errorPaths": [
+    "error.message"
+  ],
+  "verified": false,
+  "docs": "https://learn.microsoft.com/azure/ai-foundry",
+  "note": "MAI-Image-2.5-Flash is served from your own Foundry deployment, so there is no shared host: set AZURE_IMAGE_ENDPOINT to the full deployment URL including ?api-version=..."
+}
