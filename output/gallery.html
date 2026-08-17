@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Image model comparison</title><style>
+:root{--bg:#0f1115;--card:#171a21;--line:#262b36;--fg:#e8eaf0;--dim:#98a0b3;--ok:#4ade80;--bad:#f87171;--accent:#7dd3fc}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 ui-sans-serif,-apple-system,Segoe UI,sans-serif}
+header{padding:28px 32px;border-bottom:1px solid var(--line)}
+h1{margin:0 0 6px;font-size:20px;letter-spacing:.2px}
+.meta{color:var(--dim);font-size:13px}
+section{padding:28px 32px;border-bottom:1px solid var(--line)}
+h2{margin:0 0 4px;font-size:16px}
+.prompt{color:var(--dim);font-size:12.5px;max-width:110ch;margin:0 0 18px;white-space:pre-wrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;display:block;background:#0b0d11;aspect-ratio:1/1;object-fit:contain;cursor:zoom-in}
+.body{padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.name{font-weight:600;font-size:13px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;color:var(--dim);font-size:11.5px}
+.badge{border:1px solid var(--line);border-radius:999px;padding:1px 8px;font-size:10.5px;color:var(--accent)}
+.err{color:var(--bad);font-size:11.5px;word-break:break-word}
+.fail{min-height:120px;display:grid;place-items:center;color:var(--bad);font-size:12px;padding:16px;text-align:center;background:#0b0d11}
+.tag-ok{color:var(--ok)}
+dialog{border:0;background:transparent;max-width:96vw;max-height:96vh;padding:0}
+dialog img{max-width:96vw;max-height:96vh}
+dialog::backdrop{background:#000c}
+</style></head>
+<body>
+<header>
+  <h1>Image model comparison — 5 prompts</h1>
+  <div class="meta">2026-08-17T15:22:04.511Z · <span class="tag-ok">110 ok</span> · 5 failed · 0 skipped · 19.98s · $3.2006 Runware spend</div>
+</header>
+<section><h2>Editorial startup-validation cover <span class="meta">— 16:9 · 22/23 produced an image</span></h2>
+<p class="prompt">Create a premium editorial-style business magazine cover image, 1600 x 900 pixels, 16:9 landscape. Show a sophisticated startup validation workspace with carefully arranged physical materials: a rough unfinished prototype, customer feedback cards and handwritten research notes, testing samples and multiple prototype variations, user testing materials, a refined final prototype, and a notebook with organised findings. Arrange these naturally across one premium wooden worktable, with the rough prototype gradually becoming more refined toward the finished solution. Deep navy, charcoal, warm ivory, natural wood, brushed metal, subtle champagne-gold lighting. Premium commercial photography, cinematic directional lighting, realistic textures, shallow depth of field. Keep the composition visually complete across the entire frame.</p>
+<div class="grid"><div class="card"><img loading="lazy" src="runware/z-image-turbo/p1-magazine-cover.png" alt="Z-Image Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">Z-Image Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>3.6s</span><span>$0.0006</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ernie-image-turbo/p1-magazine-cover.png" alt="ERNIE Image / Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">ERNIE Image / Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>32.4s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2-lite/p1-magazine-cover.png" alt="Nano Banana 2 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>5.7s</span><span>$0.0336468</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-0/p1-magazine-cover.png" alt="Seedream 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>11.7s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image/p1-magazine-cover.png" alt="Wan 2.7 Image" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image</div>
+        <div class="row"><span class="badge">Runware</span><span>23.9s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/kling-image-3-0-omni/p1-magazine-cover.png" alt="Kling Image 3.0 Omni" onclick="zoom(this.src)"><div class="body"><div class="name">Kling Image 3.0 Omni</div>
+        <div class="row"><span class="badge">Runware</span><span>61.3s</span><span>$0.028</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-5/p1-magazine-cover.png" alt="Seedream 4.5" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.5</div>
+        <div class="row"><span class="badge">Runware</span><span>14.4s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-standard/p1-magazine-cover.png" alt="Qwen-Image 3.0 (Standard)" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 (Standard)</div>
+        <div class="row"><span class="badge">Runware</span><span>111.7s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-pro/p1-magazine-cover.png" alt="FLUX.2 [pro]" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [pro]</div>
+        <div class="row"><span class="badge">Runware</span><span>13.0s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b/p1-magazine-cover.png" alt="FLUX.2 [klein] 9B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B</div>
+        <div class="row"><span class="badge">Runware</span><span>3.6s</span><span>$0.00078</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b/p1-magazine-cover.png" alt="FLUX.2 [klein] 4B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B</div>
+        <div class="row"><span class="badge">Runware</span><span>2.6s</span><span>$0.0006</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-base/p1-magazine-cover.png" alt="FLUX.2 [klein] 9B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>5.8s</span><span>$0.00169</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-kv/p1-magazine-cover.png" alt="FLUX.2 [klein] 9B KV" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B KV</div>
+        <div class="row"><span class="badge">Runware</span><span>3.3s</span><span>$0.00078</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b-base/p1-magazine-cover.png" alt="FLUX.2 [klein] 4B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>4.5s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2/p1-magazine-cover.png" alt="Nano Banana 2 (Gemini 3.1 Flash)" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 (Gemini 3.1 Flash)</div>
+        <div class="row"><span class="badge">Runware</span><span>13.0s</span><span>$0.06895</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-lite/p1-magazine-cover.png" alt="Seedream 5.0 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>74.1s</span><span>$0.035</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-pro/p1-magazine-cover.png" alt="Qwen-Image 3.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>93.6s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-pro/p1-magazine-cover.png" alt="Seedream 5.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>364.2s</span><span>$0.04815</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ideogram-4-0/p1-magazine-cover.png" alt="Ideogram 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Ideogram 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>25.6s</span><span>$0.06</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image-pro/p1-magazine-cover.png" alt="Wan 2.7 Image Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>31.1s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-2-0-pro/p1-magazine-cover.png" alt="Qwen-Image 2.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 2.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>11.1s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><div class="fail">failed</div><div class="body"><div class="name">HunyuanImage 3.0 Instruct</div>
+        <div class="row"><span class="badge">Runware</span><span>2170.5s</span></div>
+        <div class="err">still &quot;processing&quot; after 1800s of polling</div></div></div>
+<div class="card"><img loading="lazy" src="runware/gpt-image-2-high/p1-magazine-cover.png" alt="GPT Image 2 (high)" onclick="zoom(this.src)"><div class="body"><div class="name">GPT Image 2 (high)</div>
+        <div class="row"><span class="badge">Runware</span><span>50.1s</span><span>$0.003955</span></div>
+        </div></div></div></section>
+<section><h2>Pencil sketch: router, laptop, IT city <span class="meta">— 4:3 · 22/23 produced an image</span></h2>
+<p class="prompt">Generate a simple pencil sketch and line drawing of a tech scene on a wooden table. On the left side of the table, draw a Wi-Fi router. Perched directly on top of the router, draw a small stylized internet symbol. To the right of the router, draw an open laptop. Out of the laptop screen, draw a miniature city of IT buildings and skyscrapers that seamlessly emerges and grows upward, filling the top half of the drawing. Draw an ethernet cable plugged into the port on the left side of the laptop, with the wire curling around to the back. Artistic loose hand-drawn sketch with visible pencil texture, minimal shading, clean lines. Black and white on white paper.</p>
+<div class="grid"><div class="card"><img loading="lazy" src="runware/z-image-turbo/p2-pencil-sketch-tech.png" alt="Z-Image Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">Z-Image Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>3.0s</span><span>$0.0006</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ernie-image-turbo/p2-pencil-sketch-tech.png" alt="ERNIE Image / Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">ERNIE Image / Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>29.4s</span><span>$0.0019</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2-lite/p2-pencil-sketch-tech.png" alt="Nano Banana 2 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>5.3s</span><span>$0.0336444</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-0/p2-pencil-sketch-tech.png" alt="Seedream 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>11.6s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image/p2-pencil-sketch-tech.png" alt="Wan 2.7 Image" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image</div>
+        <div class="row"><span class="badge">Runware</span><span>20.3s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/kling-image-3-0-omni/p2-pencil-sketch-tech.png" alt="Kling Image 3.0 Omni" onclick="zoom(this.src)"><div class="body"><div class="name">Kling Image 3.0 Omni</div>
+        <div class="row"><span class="badge">Runware</span><span>45.5s</span><span>$0.028</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-5/p2-pencil-sketch-tech.png" alt="Seedream 4.5" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.5</div>
+        <div class="row"><span class="badge">Runware</span><span>13.1s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-standard/p2-pencil-sketch-tech.png" alt="Qwen-Image 3.0 (Standard)" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 (Standard)</div>
+        <div class="row"><span class="badge">Runware</span><span>63.2s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-pro/p2-pencil-sketch-tech.png" alt="FLUX.2 [pro]" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [pro]</div>
+        <div class="row"><span class="badge">Runware</span><span>13.0s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b/p2-pencil-sketch-tech.png" alt="FLUX.2 [klein] 9B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B</div>
+        <div class="row"><span class="badge">Runware</span><span>3.4s</span><span>$0.00169</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b/p2-pencil-sketch-tech.png" alt="FLUX.2 [klein] 4B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B</div>
+        <div class="row"><span class="badge">Runware</span><span>3.3s</span><span>$0.0006</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-base/p2-pencil-sketch-tech.png" alt="FLUX.2 [klein] 9B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>6.8s</span><span>$0.00247</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-kv/p2-pencil-sketch-tech.png" alt="FLUX.2 [klein] 9B KV" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B KV</div>
+        <div class="row"><span class="badge">Runware</span><span>3.3s</span><span>$0.00169</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b-base/p2-pencil-sketch-tech.png" alt="FLUX.2 [klein] 4B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>5.1s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2/p2-pencil-sketch-tech.png" alt="Nano Banana 2 (Gemini 3.1 Flash)" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 (Gemini 3.1 Flash)</div>
+        <div class="row"><span class="badge">Runware</span><span>13.6s</span><span>$0.06895</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-lite/p2-pencil-sketch-tech.png" alt="Seedream 5.0 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>75.7s</span><span>$0.035</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-pro/p2-pencil-sketch-tech.png" alt="Qwen-Image 3.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>48.4s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-pro/p2-pencil-sketch-tech.png" alt="Seedream 5.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>121.3s</span><span>$0.04815</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ideogram-4-0/p2-pencil-sketch-tech.png" alt="Ideogram 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Ideogram 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>21.8s</span><span>$0.06</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image-pro/p2-pencil-sketch-tech.png" alt="Wan 2.7 Image Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>27.1s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-2-0-pro/p2-pencil-sketch-tech.png" alt="Qwen-Image 2.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 2.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>10.2s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><div class="fail">failed</div><div class="body"><div class="name">HunyuanImage 3.0 Instruct</div>
+        <div class="row"><span class="badge">Runware</span><span>2173.1s</span></div>
+        <div class="err">still &quot;processing&quot; after 1800s of polling</div></div></div>
+<div class="card"><img loading="lazy" src="runware/gpt-image-2-high/p2-pencil-sketch-tech.png" alt="GPT Image 2 (high)" onclick="zoom(this.src)"><div class="body"><div class="name">GPT Image 2 (high)</div>
+        <div class="row"><span class="badge">Runware</span><span>33.6s</span><span>$0.01678</span></div>
+        </div></div></div></section>
+<section><h2>Relaxus pilates logo (text rendering) <span class="meta">— 1:1 · 22/23 produced an image</span></h2>
+<p class="prompt">Create a logo for a pilates studio named &quot;Relaxus&quot;, with the name in black text and a light beige background.</p>
+<div class="grid"><div class="card"><img loading="lazy" src="runware/z-image-turbo/p3-relaxus-logo.png" alt="Z-Image Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">Z-Image Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>4.1s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ernie-image-turbo/p3-relaxus-logo.png" alt="ERNIE Image / Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">ERNIE Image / Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>33.5s</span><span>$0.0019</span><span>cached</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2-lite/p3-relaxus-logo.png" alt="Nano Banana 2 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>6.0s</span><span>$0.0336099</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-0/p3-relaxus-logo.png" alt="Seedream 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>8.7s</span><span>$0.03</span><span>cached</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image/p3-relaxus-logo.png" alt="Wan 2.7 Image" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image</div>
+        <div class="row"><span class="badge">Runware</span><span>16.4s</span><span>$0.03</span><span>cached</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/kling-image-3-0-omni/p3-relaxus-logo.png" alt="Kling Image 3.0 Omni" onclick="zoom(this.src)"><div class="body"><div class="name">Kling Image 3.0 Omni</div>
+        <div class="row"><span class="badge">Runware</span><span>29.3s</span><span>$0.028</span><span>cached</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-5/p3-relaxus-logo.png" alt="Seedream 4.5" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.5</div>
+        <div class="row"><span class="badge">Runware</span><span>12.7s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-standard/p3-relaxus-logo.png" alt="Qwen-Image 3.0 (Standard)" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 (Standard)</div>
+        <div class="row"><span class="badge">Runware</span><span>49.2s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-pro/p3-relaxus-logo.png" alt="FLUX.2 [pro]" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [pro]</div>
+        <div class="row"><span class="badge">Runware</span><span>12.4s</span><span>$0.03</span><span>cached</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b/p3-relaxus-logo.png" alt="FLUX.2 [klein] 9B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B</div>
+        <div class="row"><span class="badge">Runware</span><span>4.7s</span><span>$0.00169</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b/p3-relaxus-logo.png" alt="FLUX.2 [klein] 4B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B</div>
+        <div class="row"><span class="badge">Runware</span><span>3.4s</span><span>$0.0006</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-base/p3-relaxus-logo.png" alt="FLUX.2 [klein] 9B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>7.0s</span><span>$0.00247</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-kv/p3-relaxus-logo.png" alt="FLUX.2 [klein] 9B KV" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B KV</div>
+        <div class="row"><span class="badge">Runware</span><span>3.8s</span><span>$0.00169</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b-base/p3-relaxus-logo.png" alt="FLUX.2 [klein] 4B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>4.7s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2/p3-relaxus-logo.png" alt="Nano Banana 2 (Gemini 3.1 Flash)" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 (Gemini 3.1 Flash)</div>
+        <div class="row"><span class="badge">Runware</span><span>14.0s</span><span>$0.06895</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-lite/p3-relaxus-logo.png" alt="Seedream 5.0 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>30.0s</span><span>$0.035</span></div>
+        <div class="err">invalidPixels: Invalid image pixels. Total pixels (width x height) must be between 3686400 and 10404496.</div></div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-pro/p3-relaxus-logo.png" alt="Qwen-Image 3.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>46.8s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-pro/p3-relaxus-logo.png" alt="Seedream 5.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>95.5s</span><span>$0.04815</span><span>cached</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ideogram-4-0/p3-relaxus-logo.png" alt="Ideogram 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Ideogram 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>18.2s</span><span>$0.06</span></div>
+        <div class="err">unsupportedDimensions: Unsupported use of width/height parameters. The specified dimensions are not supported for the selected model. Supported values are: '2048x2048', '1440x2880', '2880x1440', '1664x2496', '2496x1664', '1792x2240', '2240x1792', '1440x2560', '2560x1440', '1600x2560', '2560x1600', '1728x2304', '2304x1728', '1296x3168', '3168x1296', '1152x2944', '2944x1152', '1248x3328', '3328x1248', '1280x3072', '3072x1280', '1024x3072', '3072x1024'.</div></div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image-pro/p3-relaxus-logo.png" alt="Wan 2.7 Image Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>22.9s</span><span>$0.075</span><span>cached</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-2-0-pro/p3-relaxus-logo.png" alt="Qwen-Image 2.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 2.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>11.0s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><div class="fail">failed</div><div class="body"><div class="name">HunyuanImage 3.0 Instruct</div>
+        <div class="row"><span class="badge">Runware</span><span>2172.4s</span></div>
+        <div class="err">still &quot;processing&quot; after 1800s of polling</div></div></div>
+<div class="card"><img loading="lazy" src="runware/gpt-image-2-high/p3-relaxus-logo.png" alt="GPT Image 2 (high)" onclick="zoom(this.src)"><div class="body"><div class="name">GPT Image 2 (high)</div>
+        <div class="row"><span class="badge">Runware</span><span>25.3s</span><span>$0.00602</span><span>cached</span></div>
+        </div></div></div></section>
+<section><h2>Futuristic robot dog, neon city <span class="meta">— 16:9 · 22/23 produced an image</span></h2>
+<p class="prompt">Generate a picture of a futuristic robot dog in a neon city.</p>
+<div class="grid"><div class="card"><img loading="lazy" src="runware/z-image-turbo/p4-robot-dog-neon.png" alt="Z-Image Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">Z-Image Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>3.4s</span><span>$0.0006</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ernie-image-turbo/p4-robot-dog-neon.png" alt="ERNIE Image / Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">ERNIE Image / Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>30.3s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2-lite/p4-robot-dog-neon.png" alt="Nano Banana 2 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>5.3s</span><span>$0.0336066</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-0/p4-robot-dog-neon.png" alt="Seedream 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>10.5s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image/p4-robot-dog-neon.png" alt="Wan 2.7 Image" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image</div>
+        <div class="row"><span class="badge">Runware</span><span>24.3s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/kling-image-3-0-omni/p4-robot-dog-neon.png" alt="Kling Image 3.0 Omni" onclick="zoom(this.src)"><div class="body"><div class="name">Kling Image 3.0 Omni</div>
+        <div class="row"><span class="badge">Runware</span><span>46.5s</span><span>$0.028</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-5/p4-robot-dog-neon.png" alt="Seedream 4.5" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.5</div>
+        <div class="row"><span class="badge">Runware</span><span>12.8s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-standard/p4-robot-dog-neon.png" alt="Qwen-Image 3.0 (Standard)" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 (Standard)</div>
+        <div class="row"><span class="badge">Runware</span><span>64.4s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-pro/p4-robot-dog-neon.png" alt="FLUX.2 [pro]" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [pro]</div>
+        <div class="row"><span class="badge">Runware</span><span>10.5s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b/p4-robot-dog-neon.png" alt="FLUX.2 [klein] 9B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B</div>
+        <div class="row"><span class="badge">Runware</span><span>3.7s</span><span>$0.00078</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b/p4-robot-dog-neon.png" alt="FLUX.2 [klein] 4B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B</div>
+        <div class="row"><span class="badge">Runware</span><span>3.2s</span><span>$0.0006</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-base/p4-robot-dog-neon.png" alt="FLUX.2 [klein] 9B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>5.3s</span><span>$0.00169</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-kv/p4-robot-dog-neon.png" alt="FLUX.2 [klein] 9B KV" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B KV</div>
+        <div class="row"><span class="badge">Runware</span><span>3.0s</span><span>$0.00078</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b-base/p4-robot-dog-neon.png" alt="FLUX.2 [klein] 4B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>4.1s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2/p4-robot-dog-neon.png" alt="Nano Banana 2 (Gemini 3.1 Flash)" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 (Gemini 3.1 Flash)</div>
+        <div class="row"><span class="badge">Runware</span><span>13.3s</span><span>$0.06895</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-lite/p4-robot-dog-neon.png" alt="Seedream 5.0 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>56.0s</span><span>$0.035</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-pro/p4-robot-dog-neon.png" alt="Qwen-Image 3.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>53.2s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-pro/p4-robot-dog-neon.png" alt="Seedream 5.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>96.1s</span><span>$0.04815</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ideogram-4-0/p4-robot-dog-neon.png" alt="Ideogram 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Ideogram 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>23.8s</span><span>$0.06</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image-pro/p4-robot-dog-neon.png" alt="Wan 2.7 Image Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>32.0s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-2-0-pro/p4-robot-dog-neon.png" alt="Qwen-Image 2.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 2.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>12.3s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><div class="fail">failed</div><div class="body"><div class="name">HunyuanImage 3.0 Instruct</div>
+        <div class="row"><span class="badge">Runware</span><span>2171.8s</span></div>
+        <div class="err">still &quot;processing&quot; after 1800s of polling</div></div></div>
+<div class="card"><img loading="lazy" src="runware/gpt-image-2-high/p4-robot-dog-neon.png" alt="GPT Image 2 (high)" onclick="zoom(this.src)"><div class="body"><div class="name">GPT Image 2 (high)</div>
+        <div class="row"><span class="badge">Runware</span><span>37.0s</span><span>$0.002985</span></div>
+        </div></div></div></section>
+<section><h2>Majestic cat on windowsill <span class="meta">— 1:1 · 22/23 produced an image</span></h2>
+<p class="prompt">Create an image of a majestic cat sitting on a windowsill with sunlight streaming in.</p>
+<div class="grid"><div class="card"><img loading="lazy" src="runware/z-image-turbo/p5-cat-windowsill.png" alt="Z-Image Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">Z-Image Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>5.2s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ernie-image-turbo/p5-cat-windowsill.png" alt="ERNIE Image / Turbo" onclick="zoom(this.src)"><div class="body"><div class="name">ERNIE Image / Turbo</div>
+        <div class="row"><span class="badge">Runware</span><span>32.5s</span><span>$0.0019</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2-lite/p5-cat-windowsill.png" alt="Nano Banana 2 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>4.9s</span><span>$0.0336075</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-0/p5-cat-windowsill.png" alt="Seedream 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>11.0s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image/p5-cat-windowsill.png" alt="Wan 2.7 Image" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image</div>
+        <div class="row"><span class="badge">Runware</span><span>22.3s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/kling-image-3-0-omni/p5-cat-windowsill.png" alt="Kling Image 3.0 Omni" onclick="zoom(this.src)"><div class="body"><div class="name">Kling Image 3.0 Omni</div>
+        <div class="row"><span class="badge">Runware</span><span>44.5s</span><span>$0.028</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-4-5/p5-cat-windowsill.png" alt="Seedream 4.5" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 4.5</div>
+        <div class="row"><span class="badge">Runware</span><span>34.7s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-standard/p5-cat-windowsill.png" alt="Qwen-Image 3.0 (Standard)" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 (Standard)</div>
+        <div class="row"><span class="badge">Runware</span><span>63.3s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-pro/p5-cat-windowsill.png" alt="FLUX.2 [pro]" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [pro]</div>
+        <div class="row"><span class="badge">Runware</span><span>12.3s</span><span>$0.03</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b/p5-cat-windowsill.png" alt="FLUX.2 [klein] 9B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B</div>
+        <div class="row"><span class="badge">Runware</span><span>4.5s</span><span>$0.00169</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b/p5-cat-windowsill.png" alt="FLUX.2 [klein] 4B" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B</div>
+        <div class="row"><span class="badge">Runware</span><span>3.5s</span><span>$0.0006</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-base/p5-cat-windowsill.png" alt="FLUX.2 [klein] 9B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>7.2s</span><span>$0.00338</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-9b-kv/p5-cat-windowsill.png" alt="FLUX.2 [klein] 9B KV" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 9B KV</div>
+        <div class="row"><span class="badge">Runware</span><span>4.3s</span><span>$0.00078</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/flux-2-klein-4b-base/p5-cat-windowsill.png" alt="FLUX.2 [klein] 4B Base" onclick="zoom(this.src)"><div class="body"><div class="name">FLUX.2 [klein] 4B Base</div>
+        <div class="row"><span class="badge">Runware</span><span>4.6s</span><span>$0.0013</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/nano-banana-2/p5-cat-windowsill.png" alt="Nano Banana 2 (Gemini 3.1 Flash)" onclick="zoom(this.src)"><div class="body"><div class="name">Nano Banana 2 (Gemini 3.1 Flash)</div>
+        <div class="row"><span class="badge">Runware</span><span>12.2s</span><span>$0.06895</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-lite/p5-cat-windowsill.png" alt="Seedream 5.0 Lite" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Lite</div>
+        <div class="row"><span class="badge">Runware</span><span>56.9s</span><span>$0.035</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-3-0-pro/p5-cat-windowsill.png" alt="Qwen-Image 3.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 3.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>53.5s</span><span>$0.04</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/seedream-5-0-pro/p5-cat-windowsill.png" alt="Seedream 5.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Seedream 5.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>233.7s</span><span>$0.04815</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/ideogram-4-0/p5-cat-windowsill.png" alt="Ideogram 4.0" onclick="zoom(this.src)"><div class="body"><div class="name">Ideogram 4.0</div>
+        <div class="row"><span class="badge">Runware</span><span>22.5s</span><span>$0.06</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/wan-2-7-image-pro/p5-cat-windowsill.png" alt="Wan 2.7 Image Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Wan 2.7 Image Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>28.6s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><img loading="lazy" src="runware/qwen-image-2-0-pro/p5-cat-windowsill.png" alt="Qwen-Image 2.0 Pro" onclick="zoom(this.src)"><div class="body"><div class="name">Qwen-Image 2.0 Pro</div>
+        <div class="row"><span class="badge">Runware</span><span>12.5s</span><span>$0.075</span></div>
+        </div></div>
+<div class="card"><div class="fail">failed</div><div class="body"><div class="name">HunyuanImage 3.0 Instruct</div>
+        <div class="row"><span class="badge">Runware</span><span>2173.0s</span></div>
+        <div class="err">still &quot;processing&quot; after 1800s of polling</div></div></div>
+<div class="card"><img loading="lazy" src="runware/gpt-image-2-high/p5-cat-windowsill.png" alt="GPT Image 2 (high)" onclick="zoom(this.src)"><div class="body"><div class="name">GPT Image 2 (high)</div>
+        <div class="row"><span class="badge">Runware</span><span>40.7s</span><span>$0.00599</span></div>
+        </div></div></div></section>
+<dialog id="lb" onclick="this.close()"><img id="lbi" alt=""></dialog>
+<script>
+function zoom(src){const d=document.getElementById('lb');document.getElementById('lbi').src=src;d.showModal();}
+</script>
+</body></html>

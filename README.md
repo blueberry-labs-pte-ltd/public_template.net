@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# public_template.net
-=======
-# Image model bench — 5 prompts × 26 models
+# Image model bench — 5 prompts × 31 models
 
 Runs the same five prompts through every model in [models.json](models.json) and puts the
 results side by side in one HTML page.
@@ -96,11 +93,18 @@ short-lived HS256 JWT that the runner mints per request.
   (OpenAI, Azure) map 16:9 to their nearest landscape size via `sizeAliases` in their config.
 - The "no text / no logos / no arrows…" part of prompt 1 is sent as a `negativePrompt` rather
   than left in the positive prompt, since naming things in a positive prompt tends to summon
-  them. Providers with no negative-prompt field simply ignore it.
+  them. Most current-generation models **reject** `negativePrompt` outright rather than ignoring
+  it, so the runner retries without it and records `negativePrompt not supported` on that cell —
+  meaning those models never received the exclusion list. Check the `notes` column before
+  concluding a model ignored an instruction.
+- Models disagree about legal sizes, and the runner discovers each one's rules from its own error
+  rather than from a hard-coded table: Ideogram accepts a fixed size list (min 2048²), Seedream
+  5.0 Lite enforces a 3.69M-pixel *minimum*, Nano Banana and ERNIE have their own lists. Each
+  cell records the size actually used, so a sharper image may just be a bigger one.
+- `results.json` is merged across runs, so re-running a single model or prompt updates those
+  cells without discarding the rest of the grid.
 - **Step Image Edit 2** and **Qwen-Image-Edit-Plus** are image *editing* models: they expect a
   source image. Given these five text-only prompts they will likely return an error, which is
   the honest result — they aren't text-to-image models. Everything else runs as text-to-image.
 - Prompt 3 (the "Relaxus" logo) is the text-rendering test and prompt 2 the instruction-following
   test — those are where models separate most.
-# public_template.net
->>>>>>> 370a982 (first commit)
